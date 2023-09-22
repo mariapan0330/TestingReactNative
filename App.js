@@ -7,14 +7,14 @@ import {
   StyleSheet,
   Platform,
 } from "react-native";
-import { Landing } from "./components/Landing";
-import { QuickView } from "./components/QuickView";
+import { WelcomeScreen } from "./app/screens/WelcomeScreen";
+import { QuickView } from "./app/screens/QuickView";
 
 // following tutorial at: https://www.youtube.com/watch?v=0-S5a0eXPoc
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Landing />
+      <WelcomeScreen />
       {/* <QuickView /> */}
     </SafeAreaView>
   );

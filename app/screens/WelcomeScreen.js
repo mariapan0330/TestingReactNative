@@ -7,7 +7,7 @@ import {
   Platform,
 } from "react-native";
 
-export const Landing = (handleQuickViewPress) => {
+export const WelcomeScreen = (handleQuickViewPress) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={{ flex: 1, alignItems: "center" }}>
