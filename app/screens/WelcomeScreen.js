@@ -44,7 +44,10 @@ export const WelcomeScreen = (handleQuickViewPress) => {
             alignItems: "center",
           }}
         >
-          <Text style={{ flex: 1 }} onPress={() => handleQuickViewPress()}>
+          <Text
+            style={[styles.largeBoldMono, { flex: 1 }]}
+            onPress={() => handleQuickViewPress()}
+          >
             Quick View
           </Text>
         </View>
@@ -59,7 +62,7 @@ export const WelcomeScreen = (handleQuickViewPress) => {
           }}
         >
           <Text
-            style={{ flex: 1 }}
+            style={[styles.largeBoldMono, { flex: 1 }]}
             onPress={() => console.log("pushed teal btn")}
           >
             Sign Up
@@ -75,5 +78,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "mediumaquamarine",
     // paddingTop: Platform.OS === "android" ? "10%" : 0,
+  },
+  largeBoldMono: {
+    color: "white",
+    fontSize: 30,
+    fontWeight: "bold",
+    fontFamily: "monospace",
   },
 });
